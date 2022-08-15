@@ -3,9 +3,10 @@ import HomeStyle from "./Home.style";
 import Header from "../../components/header/Header";
 import axios from "axios";
 const Home = () => {
-  const [search, setSearch] = useState("egg");
+  const menu = ["Breakfast", "Lunch", "Dinner", "Snack", "Teatime"];
+  const [search, setSearch] = useState(menu[0]);
   const [meal, setMeal] = useState("breakfast");
-  const [info, setInfo] = useState("[]");
+  const [info, setInfo] = useState([]);
 
   const APP_ID = process.env.REACT_APP_APP_ID;
   const APP_KEY = process.env.REACT_APP_APP_KEY;
@@ -25,15 +26,16 @@ const Home = () => {
     }
   };
 
-  useEffect(() => {
-    getData();
-  }, []);
-
   console.log(info);
 
   return (
     <div>
-      <Header />
+      <Header
+        setSearch={setSearch}
+        setMeal={setMeal}
+        menu={menu}
+        getData={getData}
+      />
     </div>
   );
 };

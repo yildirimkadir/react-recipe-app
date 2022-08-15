@@ -3,6 +3,7 @@ import { FlexStyle } from "../globalStyles/Flex.style";
 
 export const HeaderContainer = styled(FlexStyle)`
   background: ${({ theme }) => theme.colors.mainColor};
+  /* background: lightgray; */
   flex-direction: column;
 `;
 
@@ -16,7 +17,7 @@ export const FormContainer = styled.form`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   border-radius: 3px;
   margin: 20px;
 `;
