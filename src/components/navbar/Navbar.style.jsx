@@ -24,7 +24,15 @@ export const Hamburger = styled.div`
   } ;
 `;
 
-export const Menu = styled(FlexStyle)``;
+export const Menu = styled(FlexStyle)`
+  @media (max-width: ${({ theme }) => theme.screens.lgwidth}) {
+    flex-direction: column;
+    width: 100%;
+    max-height: ${({ isOpen }) => (isOpen ? "25rem" : "0")};
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  } ;
+`;
 
 export const MenuLink = styled(Link)`
   text-align: center;
@@ -35,6 +43,10 @@ export const MenuLink = styled(Link)`
   &:hover {
     color: ${({ theme }) => theme.colors.mainColor};
     font-weight: bold;
+  }
+  @media (max-width: ${({ theme }) => theme.screens.lgwidth}) {
+    border-bottom: 1px solid ${({ theme }) => theme.colors.mainColor};
+    width: 50%;
   }
 `;
 

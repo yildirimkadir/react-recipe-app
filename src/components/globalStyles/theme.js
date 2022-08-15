@@ -9,7 +9,7 @@ const theme = {
 
 
     screens: {
-        lgwidth: '900px'
+        lgwidth: '700px'
     },
 };
 
