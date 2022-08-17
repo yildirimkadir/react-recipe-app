@@ -19,7 +19,7 @@ const Cards = ({ info }) => {
         return (
           <Card key={index}>
             <Header>{label}</Header>
-            <Image src={image} />
+            <Image src={image || defaultImage} />
             <Button
               onClick={() =>
                 navigate("/detail", { state: item, replace: false })
