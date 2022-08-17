@@ -3,8 +3,8 @@ import { FlexStyle } from "../../components/globalStyles/Flex.style";
 
 export const LoginContainer = styled(FlexStyle)`
   height: 100vh;
-  /* background-image: url("https://barcelonadesignshop.com/wp-content/uploads/2018/11/meat-steak-food-menu-template-restaurant-gourmet-psd.jpg"); */
-  background-image: url("https://barcelonadesignshop.com/wp-content/uploads/2018/11/food-menu-template-restaurant-free-psd-1.jpg");
+  background-image: url("https://www.mashed.com/img/gallery/most-restaurant-menus-are-full-of-these-mind-tricks/intro-1527628002.jpg");
+  /* background-image: url("https://barcelonadesignshop.com/wp-content/uploads/2018/11/food-menu-template-restaurant-free-psd-1.jpg"); */
   /* opacity: 0.7; */
   background-repeat: no-repeat;
   background-size: cover;

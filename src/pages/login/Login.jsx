@@ -22,7 +22,7 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     sessionStorage.setItem("currentUser", JSON.stringify(userInfo));
-    navigate("/detail");
+    navigate(-1);
     setUserName("");
     setPassword("");
   };
